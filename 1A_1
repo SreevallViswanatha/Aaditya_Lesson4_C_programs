@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to calculate simple interest for 3 sets of p, n and r.
+int main()
+{
+    float p, n, r, simple_interest;
+    int count;
+    count=1;
+    while(count<=3)
+    {
+        printf("Enter p:");
+        scanf("%f", &p);
+        printf("Enter n:");
+        scanf("%f", &n);
+        printf("Enter r:");
+        scanf("%f", &r);
+        simple_interest=p*n*r/100;
+        printf("The simple interest is:%.2f\n", simple_interest);
+        count++;
+    }
+}
