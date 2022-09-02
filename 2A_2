@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept a number and display the sum of its digits.
+int main()
+{
+    int number, a, sum=0;
+    printf("Enter a number:");
+    scanf("%d", &number);
+    while(number!=0)
+    {
+        a=number%10;
+        sum=sum+a;
+        number=number/10;
+    }
+    printf("%d", sum);
+}
