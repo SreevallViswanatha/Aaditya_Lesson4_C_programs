@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to list all the Armstrong numbers from 0 to 1000.
+int main()
+{
+    int number, old_number=0, sum, a;
+    while(old_number<=1000)
+    {
+        number=old_number;
+        sum=0;
+        while(number>0)
+        {
+            a=number%10;
+            sum=sum+a*a*a;
+            number=number/10;
+        }
+        if(sum==old_number)
+        {
+            printf("%d\n", old_number);
+        }
+        old_number++;
+    }
+}
