@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept a number and display if it is an Armstrong number.
+//(An Armstrong number is a number such that the sum ! of its digits raised to the third power is equal to the number ! itself. For example, 371 is an Armstrong number).
+int main()
+{
+    int number, a, sum=0, old_number;
+    printf("Enter a number:");
+    scanf("%d", &number);
+    old_number=number;
+    while(number!=0)
+    {
+        a=number%10;
+        sum=sum+a*a*a;
+        number=number/10;
+    }
+    if(sum==old_number)
+    {
+        printf("Armstrong number.");
+    }
+    else
+    {
+        printf("Not an armstrong number");
+    }
+}
