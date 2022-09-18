@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept a number and display the multiplication table for that number upto 12.
+int main()
+{
+    int number, i=1, product=1;
+    printf("Enter a number:");
+    scanf("%d", &number);
+    while(i<=12)
+    {
+        product=i*number;
+        printf("%d x %d = %d\n", number, i, product);
+        i++;
+    }
+}
