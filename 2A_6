@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept 10 numbers from the user and display the sum of the entered numbers.
+int main()
+{
+    int number, sum=0, i=1;
+    while(i<=10)
+    {
+        printf("Enter a number:");
+        scanf("%d", &number);
+        sum+=number;
+        i++;
+    }
+    printf("%d", sum);
+}
