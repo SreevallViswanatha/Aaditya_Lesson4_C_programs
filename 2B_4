@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept a number and find the sum of its digits. If the number of digits of sum of the digits of the number is greater than or equal to 2, keep on adding until you get the sum as a single digit.
+int main()
+{
+    int number, sum=0, a;
+    printf("Enter a number:");
+    scanf("%d", &number);
+    while(sum/10!=0||sum==0)
+    {
+        sum=0;
+        while(number>0)
+        {
+            a=number%10;
+            sum+=a;
+            number=number/10;
+        }
+        number=sum;
+    }
+    printf("%d", sum);
+}
