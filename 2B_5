@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to swap first and last digits of a number.
+int main()
+{
+    int number, first_digit, last_digit;
+    printf("Enter a number:");
+    scanf("%d", &number);
+    last_digit=number%10;
+    number=number/10;
+    while(number>0)
+    {
+        first_digit=number%10;
+        number=number/10;
+    }
+    printf("After swapping, first digit is %d, and the last digit is %d.", last_digit, first_digit);
+}
