@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+//WAP to accept a number and check whether that number is a palindrome or not.
+int main()
+{
+    int number, original_number, a, rev_number=0;
+    printf("Enter a number:");
+    scanf("%d", &number);
+    original_number=number;
+    printf("The original number is %d, and the reverse number ", number);
+    while(number>0)
+    {
+        a=number%10;
+        rev_number=rev_number*10+a;
+        printf("%d", a);
+        number=number/10;
+    }
+    if(original_number==rev_number)
+    {
+        printf(" is a palindrome.");
+    }
+    else
+    {
+        printf(" is not a palindrome.");
+    }
+}
